@@ -1,0 +1,97 @@
+/////////////////////////////////
+//container
+.container{
+    width: 100%;
+    min-height: 50rem;
+    background-color: #fff;
+}
+
+/////////////////////////////////
+//header
+.header{
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+    display: flex;
+    border-bottom: var(--border-botom-light);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/////////////////////////////////
+//hotel
+.hotel{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    
+    &__nav{
+        flex-basis: 20%;
+        background-color: var(--color-gray-dark-1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__content{
+        flex-basis: 80%;
+        background-color: var(--color-gray-light-3);
+    }
+}
+
+
+/////////////////////////////////
+//album
+.album{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+/////////////////////////////////
+//sample
+.sample{
+    display: flex;
+    background-color: #fff;
+    border-bottom: var(--border-botom-light);
+    align-items: center;
+
+    &__stars{
+        display: flex;
+    }
+
+    &__location{
+        display: flex;
+    }
+}
+
+
+
+
+/////////////////////////////////
+//detail
+.detail{
+    display: flex;
+
+    &__preamble{
+        flex-basis: 60%;
+    }
+
+    &__instance{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+}
