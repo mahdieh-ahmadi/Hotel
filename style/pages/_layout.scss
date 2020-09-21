@@ -33,6 +33,12 @@
     display: flex;
     align-items: stretch;
     width: 100%;
+
+    @media (max-width : 650px) {
+        &{
+           flex-direction: column;
+        } 
+    }
     
     &__nav{
         flex-basis: 20%;
@@ -70,6 +76,14 @@
     border-bottom: var(--border-botom-light);
     align-items: center;
 
+    @media(max-width : 900px){
+        &{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     &__stars{
         display: flex;
     }
@@ -86,6 +100,12 @@
 //detail
 .detail{
     display: flex;
+
+    @media(max-width : 850px){
+        &{
+            flex-direction: column;
+        }
+    }
 
     &__preamble{
         flex-basis: 60%;

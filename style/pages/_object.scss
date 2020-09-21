@@ -186,15 +186,6 @@ body{
 
 
 .hotel{
-
-    @media (max-width : 650px) {
-        &{
-            display: grid;
-            grid-template-columns: 100%;
-        }
-    }
-
-
     &__nav{
         &--list{
             list-style: none;
@@ -264,16 +255,7 @@ body{
 
 .sample{
 
-    @media(max-width : 900px){
-        &{
-            display: grid;
-            grid-template-columns: repeat( auto-fit , minmax(200px , 1fr));
-            align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-    }
+   
 
     &__title{
         padding: 1.5rem 1rem;
@@ -284,7 +266,9 @@ body{
     }
 
     &__stars{
-        margin-right: auto;
+        margin: 0  auto;
+        align-items: center;
+
         &--star{
             width: 2.5rem;
             height: 2.5rem;
@@ -329,13 +313,6 @@ body{
 }
 
 .detail{
-
-    @media(max-width : 850px){
-        &{
-            display: grid;
-            grid-template-columns: 100%;
-        }
-    }
 
     &__box{
         padding: 2rem;

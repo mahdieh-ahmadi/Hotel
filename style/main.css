@@ -43,6 +43,15 @@
   width: 100%;
 }
 
+@media (max-width: 650px) {
+  .hotel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .hotel__nav {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -87,6 +96,21 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .sample {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .sample__stars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +127,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 850px) {
+  .detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .detail__preamble {
@@ -428,15 +461,6 @@ body {
           justify-content: center;
 }
 
-@media (max-width: 650px) {
-  .hotel {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-}
-
 .hotel__nav--list {
   list-style: none;
   padding-top: 4rem;
@@ -511,24 +535,6 @@ body {
   width: 33.3333333334%;
 }
 
-@media (max-width: 900px) {
-  .sample {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .sample__title {
   padding: 1.5rem 1rem;
   font-size: 2rem;
@@ -538,7 +544,10 @@ body {
 }
 
 .sample__stars {
-  margin-right: auto;
+  margin: 0  auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sample__stars--star {
@@ -588,15 +597,6 @@ body {
 .sample__degree--free {
   color: #fff;
   font-size: 1.2re;
-}
-
-@media (max-width: 850px) {
-  .detail {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
 }
 
 .detail__box {
