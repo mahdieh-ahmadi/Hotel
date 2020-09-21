@@ -29,6 +29,18 @@ body{
     min-height: 100vh;
     padding: 20rem 12rem;
     margin: 0;
+
+    @media (max-width : 1000px) {
+        &{
+            padding: 15rem 5rem;
+        }
+    }
+
+    @media (max-width : 350px) {
+        &{
+            padding: 5rem 0.5rem;
+        }
+    }
 }
 
 
@@ -44,6 +56,7 @@ body{
 
 
 .header{
+
     &__logo{
         width: 6rem;
         margin-left: 3rem;
@@ -88,8 +101,8 @@ body{
             outline: none;
             position: absolute;
             top: 0rem;
-            right: 1rem;
-            margin-right: 9rem;
+            right: 2px;
+            margin-right: 17%;
             border-radius: 100px;
             display: flex;
             align-items: center;
@@ -173,6 +186,15 @@ body{
 
 
 .hotel{
+
+    @media (max-width : 650px) {
+        &{
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+
+
     &__nav{
         &--list{
             list-style: none;
@@ -241,6 +263,18 @@ body{
 }
 
 .sample{
+
+    @media(max-width : 900px){
+        &{
+            display: grid;
+            grid-template-columns: repeat( auto-fit , minmax(200px , 1fr));
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
     &__title{
         padding: 1.5rem 1rem;
         font-size: 2rem;
@@ -295,6 +329,14 @@ body{
 }
 
 .detail{
+
+    @media(max-width : 850px){
+        &{
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+
     &__box{
         padding: 2rem;
         margin: 2.5rem;
@@ -316,11 +358,17 @@ body{
             padding:2rem 1.2rem;
             list-style: none;
             border-bottom: var(--border-botom-light);
+
+            @media(max-width : 750px){
+                flex-direction: column;
+            }
         }
 
         &--item{
             flex-basis: 50%;
             padding: 0.7rem 0;
+
+            
         }
 
         &--link{
@@ -359,6 +407,10 @@ body{
                 margin-right: -2rem;
             }
         }
+
+        @media(max-width : 700px){
+            flex-direction: column;
+        }
     }
 
     &__item{
@@ -391,6 +443,13 @@ body{
         &--contact{
             display: flex;
             align-items: center;
+
+            @media(max-width : 600px){
+                &{
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
         }
 
         &--image{
@@ -403,6 +462,15 @@ body{
         &--deta{
             margin-right: auto;
             margin-left: 1rem;
+
+            @media(max-width : 600px){
+                &{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
 
         &--data{
@@ -443,6 +511,14 @@ body{
         font-weight: 200;
         text-transform: uppercase;
         margin-bottom: 2rem;
+        padding: 0 10px;
+                text-align: center;
+
+        @media(max-width : 700px){
+            &{
+                font-size: 1.5rem;
+            }
+        }
     }
 
     &__btn{
@@ -455,12 +531,26 @@ body{
         overflow: hidden;
         position: relative;
         cursor: pointer;
+
+        @media(max-width : 700px){
+            &{
+                width: 20rem;
+                height: 5rem;
+                padding: 1.5rem 6rem;
+            }
+        }
         
         & > *{
             color: #fff;
             font-size: 1.6rem;
             text-transform: uppercase;
             transition: all 0.2s;
+
+            @media(max-width : 700px){
+                &{
+                    font-size: 1.4rem;
+                }
+            }
         }
 
         &--valid{
@@ -488,5 +578,7 @@ body{
             top: 50%;
             transform: translate(-50%,-50%);
         }
+
+        
     }
 }

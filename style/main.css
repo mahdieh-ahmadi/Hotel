@@ -6,7 +6,7 @@
 
 .header {
   width: 100%;
-  height: 8rem;
+  /* height: 8rem; */
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +18,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 750px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    padding: 15px 0;
+  }
 }
 
 .hotel {
@@ -215,6 +228,18 @@ body {
   margin: 0;
 }
 
+@media (max-width: 1000px) {
+  body {
+    padding: 15rem 5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    padding: 5rem 0.5rem;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -294,8 +319,8 @@ body {
   outline: none;
   position: absolute;
   top: 0rem;
-  right: 1rem;
-  margin-right: 9rem;
+  right: 2px;
+  margin-right: 17%;
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +428,15 @@ body {
           justify-content: center;
 }
 
+@media (max-width: 650px) {
+  .hotel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .hotel__nav--list {
   list-style: none;
   padding-top: 4rem;
@@ -477,6 +511,24 @@ body {
   width: 33.3333333334%;
 }
 
+@media (max-width: 900px) {
+  .sample {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .sample__title {
   padding: 1.5rem 1rem;
   font-size: 2rem;
@@ -538,6 +590,15 @@ body {
   font-size: 1.2re;
 }
 
+@media (max-width: 850px) {
+  .detail {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .detail__box {
   padding: 2rem;
   margin: 2.5rem;
@@ -564,6 +625,15 @@ body {
   padding: 2rem 1.2rem;
   list-style: none;
   border-bottom: var(--border-botom-light);
+}
+
+@media (max-width: 750px) {
+  .detail__box--list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .detail__box--item {
@@ -618,6 +688,15 @@ body {
   margin-right: -2rem;
 }
 
+@media (max-width: 700px) {
+  .detail__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .detail__item {
   margin: 2rem;
   background-color: #fff;
@@ -656,6 +735,18 @@ body {
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  .detail__item--contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .detail__item--image {
   width: 5rem;
   height: 5rem;
@@ -667,6 +758,24 @@ body {
 .detail__item--deta {
   margin-right: auto;
   margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+  .detail__item--deta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .detail__item--data {
@@ -714,6 +823,14 @@ body {
   font-weight: 200;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  padding: 0 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .footer__header {
+    font-size: 1.5rem;
+  }
 }
 
 .footer__btn {
@@ -729,12 +846,26 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 700px) {
+  .footer__btn {
+    width: 20rem;
+    height: 5rem;
+    padding: 1.5rem 6rem;
+  }
+}
+
 .footer__btn > * {
   color: #fff;
   font-size: 1.6rem;
   text-transform: uppercase;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 700px) {
+  .footer__btn > * {
+    font-size: 1.4rem;
+  }
 }
 
 .footer__btn--valid {
